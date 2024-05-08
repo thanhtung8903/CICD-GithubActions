@@ -7,5 +7,8 @@ public record ApiError(
         String message,
         int status,
         LocalDateTime timestamp
+
+
+//        add to ver2
 ) {
 }
