@@ -42,7 +42,7 @@ jobs:
     - name: Build with Maven
       run: mvn clean install
 
-  deploy to heroku:
+  deploy-to-heroku:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
