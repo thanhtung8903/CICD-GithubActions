@@ -54,6 +54,6 @@ jobs:
         cache: maven
     - uses: akhileshns/heroku-deploy@v3.12.12
       with:
-        heroku_api_key: 'HRKU-6248f7dc-2186-4425-a0b3-6ce3ab253255'
-        heroku_app_name: 'test-cicd-github'
-        heroku_email: 'nguyenthanhtungclc@gmail.com'
+        heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+        heroku_email: ${{secrets.HEROKU_EMAIL}}
+        heroku_app_name: ${{secrets.HEROKU_APP}}
